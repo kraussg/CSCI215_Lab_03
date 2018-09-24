@@ -19,9 +19,9 @@ function calculate() {
 
     // ==========================================
     // Todo: Perform conversion calculations here
-       var weightKg = weight* .454;
+       var weightKg = weight* 0.454;
        var heightCm = height * 2.54;
-       var heightMeter = height * 0.0254; //fix
+       var heightMeter = height * 0.0254;
     // -------------------------------
     // Body Surface Area (BSA)
     // -------------------------------
@@ -59,7 +59,7 @@ function calculate() {
     // ==========================================
     // Todo: Perform BMI calculation here
 
-        BMI = (weightKg) / (Math.pow(heightMeter,2));
+      BMI = ((weightKg) / (heightMeter*heightMeter));
 
     // Do not modify this function call
     display( BSA, IBW, BMI );
